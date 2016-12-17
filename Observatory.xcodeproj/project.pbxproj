@@ -10,6 +10,7 @@
 		D03FB8521E04E01B007E9968 /* Observatory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8481E04E01B007E9968 /* Observatory.framework */; };
 		D03FB8571E04E01B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */; };
 		D03FB8591E04E01B007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB84B1E04E01B007E9968 /* Observatory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D03FB8631E04E197007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8621E04E197007E9968 /* Observatory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D03FB8511E04E01B007E9968 /* ObservatoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservatoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoryTests.swift; sourceTree = "<group>"; };
 		D03FB8581E04E01B007E9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03FB8621E04E197007E9968 /* Observatory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D03FB84B1E04E01B007E9968 /* Observatory.h */,
 				D03FB84C1E04E01B007E9968 /* Info.plist */,
+				D03FB8621E04E197007E9968 /* Observatory.swift */,
 			);
 			path = Observatory;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D03FB8471E04E01B007E9968 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D03FB8501E04E01B007E9968 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03FB8631E04E197007E9968 /* Observatory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		D03FB85D1E04E01B007E9968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		D03FB85E1E04E01B007E9968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		D03FB8601E04E01B007E9968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ObservatoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryTests;
@@ -367,6 +376,7 @@
 		D03FB8611E04E01B007E9968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ObservatoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryTests;
