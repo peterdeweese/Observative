@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ObservatoryMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>D03FB8501E04E01B007E9968</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D03FB8681E07564C007E9968</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D03FB8701E07564D007E9968</key>
 		<dict>
 			<key>primary</key>
 			<true/>
