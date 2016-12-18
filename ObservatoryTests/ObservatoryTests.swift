@@ -1,36 +1,22 @@
-//
-//  ObservatoryTests.swift
-//  ObservatoryTests
-//
-//  Created by Peter DeWeese on 12/16/16.
-//  Copyright © 2016 DeWeese Consulting. All rights reserved.
-//
-
 import XCTest
 @testable import Observatory
 
-class ObservatoryTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+class ObservatoryTests: XCTestCase
+{
+    func testObservation()
+    {
+        var updateCalled = false
+        let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1", "key2":"value2"])
+        
+        let observatory = Observatory()
+        observatory.startObservation(objectToWatch, keyPath:"key1")
+        { (oldValue, newValue) in
+            updateCalled = true
         }
+        
+        XCTAssertNotNil(observatory.observations[objectToWatch, "key1"])
+        XCTAssertFalse(updateCalled)
+        objectToWatch["key1"] = "updatedValue1"
+        XCTAssert(updateCalled)
     }
-    
 }
