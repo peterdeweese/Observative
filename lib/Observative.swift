@@ -1,7 +1,7 @@
 import Foundation
 
 //TODO: add conventional method extensions?
-class Observative:NSObject
+public class Observative:NSObject
 {
     public typealias UpdateBlock = (_ oldValue:Any?, _ newValue:Any?) -> Void
 
@@ -55,7 +55,7 @@ class Observative:NSObject
         observations.set.forEach{ stopObservation($0) }
     }
     
-    override func observeValue(forKeyPath keyPath:String?, of object:Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
+    override public func observeValue(forKeyPath keyPath:String?, of object:Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
         if let object = object as? NSObject,
             let keyPath = keyPath,
