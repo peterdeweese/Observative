@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Observatory"
-  s.version      = "0.0"
+  s.version      = "0.0.1"
   s.summary      = "BoundUserDefaults allows you to get and set user defaults as simple subclass properties."
   s.homepage     = "https://github.com/peterdeweese/Observatory"
   s.license      = "MIT"
