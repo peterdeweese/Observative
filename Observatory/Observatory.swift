@@ -7,7 +7,7 @@ class Observatory:NSObject
 
     var observations = Observations()
     
-    func startObservation(_ observation:Observation)
+    private func startObservation(_ observation:Observation)
     {
         guard let object = observation.object else
         {
@@ -23,12 +23,12 @@ class Observatory:NSObject
         observation.object?.addObserver(self, forKeyPath:observation.keyPath, options:[.old, .new], context: nil)
     }
     
-    func startObservation(_ object:NSObject, keyPath:String, update:UpdateBlock?)
+    func startObservation(of object:NSObject, keyPath:String, update:UpdateBlock?)
     {
         startObservation(Observation(object:object, keyPath:keyPath, update:update))
     }
 
-    func stopObservation(_ observation:Observation)
+    private func stopObservation(_ observation:Observation)
     {
         observations.remove(observation)
         if let object = observation.object
@@ -37,7 +37,7 @@ class Observatory:NSObject
         }
     }
     
-    func stopObservation(_ object:NSObject, keyPath:String)
+    func stopObservation(of object:NSObject, keyPath:String)
     {
         if let observation = observations[object, keyPath]
         {
@@ -45,7 +45,12 @@ class Observatory:NSObject
         }
     }
 
-    func stopObservations()
+    func stopObservation(of object:NSObject)
+    {
+        observations[object]?.values.forEach{ stopObservation($0) }
+    }
+    
+    func stopObservation()
     {
         observations.set.forEach{ stopObservation($0) }
     }
@@ -63,7 +68,7 @@ class Observatory:NSObject
     
     deinit
     {
-        stopObservations()
+        stopObservation()
     }
     
     //TODO: make public and make object and keypath read only

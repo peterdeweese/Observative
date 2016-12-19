@@ -9,7 +9,7 @@ class ObservatoryTests: XCTestCase
         let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1", "key2":"value2"])
         
         let observatory = Observatory()
-        observatory.startObservation(objectToWatch, keyPath:"key1")
+        observatory.startObservation(of:objectToWatch, keyPath:"key1")
         { (oldValue, newValue) in
             updateCalled = true
         }
@@ -26,7 +26,7 @@ class ObservatoryTests: XCTestCase
         let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1", "key2":"value2"])
         
         let observatory = Observatory()
-        observatory.startObservation(objectToWatch, keyPath:"key1")
+        observatory.startObservation(of:objectToWatch, keyPath:"key1")
         { (oldValue, newValue) in
             updateCalled = true
         }
@@ -34,7 +34,7 @@ class ObservatoryTests: XCTestCase
         XCTAssertNotNil(observatory.observations[objectToWatch, "key1"])
         XCTAssertFalse(updateCalled)
         
-        observatory.stopObservations()
+        observatory.stopObservation()
 
         objectToWatch["key1"] = "updatedValue1"
         XCTAssertFalse(updateCalled)
