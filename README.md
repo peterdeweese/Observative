@@ -1,5 +1,5 @@
-# Observatory
-Swift library to simplify key value observation. KVO only works with NSObjects, so Observatory can only observe ancestors of NSObject.
+# Observative
+Swift library to simplify key value observation. KVO only works with NSObjects, so Observative can only observe ancestors of NSObject.
 
 ### Types
  * public typealias UpdateBlock = (_ oldValue:Any?, _ newValue:Any?) -> Void
@@ -15,8 +15,8 @@ Swift library to simplify key value observation. KVO only works with NSObjects, 
 var updateCalled = false
 let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1"])
         
-let observatory = Observatory()
-observatory.startObservation(objectToWatch, keyPath:"key1")
+let observative = Observative()
+observative.startObservation(objectToWatch, keyPath:"key1")
 { (oldValue, newValue) in
     updateCalled = true
 }
@@ -29,15 +29,15 @@ if updateCalled{ print("it worked!") }
 ```swift
 class MyController
 {
-    let observatory = Observatory()
+    let observative = Observative()
 
     var objectToWatch:CustomObject {
         didSet {
             if oldValue != nil
             {
-                observatory.stopObservation(oldValue, keyPath: "myProperty")
+                observative.stopObservation(oldValue, keyPath: "myProperty")
             }
-            observatory.startObservation(objectToWatch, keyPath:"myProperty")
+            observative.startObservation(objectToWatch, keyPath:"myProperty")
             { oldValue, newValue in
                 self.doOnChange()
             }
