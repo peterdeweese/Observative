@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D03FB8521E04E01B007E9968 /* Observatory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8481E04E01B007E9968 /* Observatory.framework */; };
-		D03FB8571E04E01B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */; };
-		D03FB8591E04E01B007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB84B1E04E01B007E9968 /* Observatory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D03FB8631E04E197007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8621E04E197007E9968 /* Observatory.swift */; };
-		D03FB8721E07564D007E9968 /* Observatory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8691E07564C007E9968 /* Observatory.framework */; };
-		D03FB8791E07564D007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB86B1E07564C007E9968 /* Observatory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D03FB8801E07567E007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8621E04E197007E9968 /* Observatory.swift */; };
-		D03FB8811E07568C007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB84B1E04E01B007E9968 /* Observatory.h */; };
-		D03FB8821E07569A007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */; };
-		D03FB8841E077700007E9968 /* Observatory.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D03FB8831E077700007E9968 /* Observatory.podspec */; };
+		D03FB8521E04E01B007E9968 /* Observative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8481E04E01B007E9968 /* Observative.framework */; };
+		D03FB88B1E077FE6007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observatory.h */; };
+		D03FB88C1E077FE6007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observatory.h */; };
+		D03FB88D1E077FE6007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observatory.swift */; };
+		D03FB88E1E077FE6007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observatory.swift */; };
+		D03FB8941E07820B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservatoryTests.swift */; };
+		D03FB8951E07820B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservatoryTests.swift */; };
+		D03FB89E1E0783E7007E9968 /* Observative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8691E07564C007E9968 /* Observative.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +35,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D03FB8481E04E01B007E9968 /* Observatory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Observatory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FB84B1E04E01B007E9968 /* Observatory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observatory.h; sourceTree = "<group>"; };
-		D03FB84C1E04E01B007E9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03FB8511E04E01B007E9968 /* ObservatoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservatoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoryTests.swift; sourceTree = "<group>"; };
-		D03FB8581E04E01B007E9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03FB8621E04E197007E9968 /* Observatory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
-		D03FB8691E07564C007E9968 /* Observatory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Observatory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FB86B1E07564C007E9968 /* Observatory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observatory.h; sourceTree = "<group>"; };
-		D03FB86C1E07564C007E9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03FB8711E07564D007E9968 /* ObservatoryMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservatoryMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03FB8481E04E01B007E9968 /* Observative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Observative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03FB8511E04E01B007E9968 /* ObservativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03FB8691E07564C007E9968 /* Observative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Observative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03FB8711E07564D007E9968 /* Observative-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Observative-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FB8831E077700007E9968 /* Observatory.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observatory.podspec; sourceTree = "<group>"; };
+		D03FB8871E077FE6007E9968 /* Observatory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observatory.h; sourceTree = "<group>"; };
+		D03FB8881E077FE6007E9968 /* Observatory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
+		D03FB8901E07820B007E9968 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03FB8911E07820B007E9968 /* ObservatoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservatoryTests.swift; sourceTree = "<group>"; };
+		D03FB8961E078220007E9968 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D03FB8971E078220007E9968 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D03FB89C1E0783C1007E9968 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D03FB89D1E0783C1007E9968 /* Info-Mac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8521E04E01B007E9968 /* Observatory.framework in Frameworks */,
+				D03FB8521E04E01B007E9968 /* Observative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8721E07564D007E9968 /* Observatory.framework in Frameworks */,
+				D03FB89E1E0783E7007E9968 /* Observative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,10 +87,11 @@
 		D03FB83E1E04E01B007E9968 = {
 			isa = PBXGroup;
 			children = (
-				D03FB84A1E04E01B007E9968 /* Observatory */,
+				D03FB8851E077FE6007E9968 /* lib */,
+				D03FB88F1E07820B007E9968 /* test */,
 				D03FB8831E077700007E9968 /* Observatory.podspec */,
-				D03FB8551E04E01B007E9968 /* ObservatoryTests */,
-				D03FB86A1E07564C007E9968 /* ObservatoryMac */,
+				D03FB8961E078220007E9968 /* LICENSE */,
+				D03FB8971E078220007E9968 /* README.md */,
 				D03FB8491E04E01B007E9968 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,40 +99,32 @@
 		D03FB8491E04E01B007E9968 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D03FB8481E04E01B007E9968 /* Observatory.framework */,
-				D03FB8511E04E01B007E9968 /* ObservatoryTests.xctest */,
-				D03FB8691E07564C007E9968 /* Observatory.framework */,
-				D03FB8711E07564D007E9968 /* ObservatoryMacTests.xctest */,
+				D03FB8481E04E01B007E9968 /* Observative.framework */,
+				D03FB8511E04E01B007E9968 /* ObservativeTests.xctest */,
+				D03FB8691E07564C007E9968 /* Observative.framework */,
+				D03FB8711E07564D007E9968 /* Observative-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D03FB84A1E04E01B007E9968 /* Observatory */ = {
+		D03FB8851E077FE6007E9968 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				D03FB84B1E04E01B007E9968 /* Observatory.h */,
-				D03FB84C1E04E01B007E9968 /* Info.plist */,
-				D03FB8621E04E197007E9968 /* Observatory.swift */,
+				D03FB8871E077FE6007E9968 /* Observatory.h */,
+				D03FB8881E077FE6007E9968 /* Observatory.swift */,
+				D03FB89C1E0783C1007E9968 /* Info-iOS.plist */,
+				D03FB89D1E0783C1007E9968 /* Info-Mac.plist */,
 			);
-			path = Observatory;
+			path = lib;
 			sourceTree = "<group>";
 		};
-		D03FB8551E04E01B007E9968 /* ObservatoryTests */ = {
+		D03FB88F1E07820B007E9968 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				D03FB8561E04E01B007E9968 /* ObservatoryTests.swift */,
-				D03FB8581E04E01B007E9968 /* Info.plist */,
+				D03FB8901E07820B007E9968 /* Info.plist */,
+				D03FB8911E07820B007E9968 /* ObservatoryTests.swift */,
 			);
-			path = ObservatoryTests;
-			sourceTree = "<group>";
-		};
-		D03FB86A1E07564C007E9968 /* ObservatoryMac */ = {
-			isa = PBXGroup;
-			children = (
-				D03FB86B1E07564C007E9968 /* Observatory.h */,
-				D03FB86C1E07564C007E9968 /* Info.plist */,
-			);
-			path = ObservatoryMac;
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +134,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8591E04E01B007E9968 /* Observatory.h in Headers */,
+				D03FB88B1E077FE6007E9968 /* Observatory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,17 +142,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8791E07564D007E9968 /* Observatory.h in Headers */,
-				D03FB8811E07568C007E9968 /* Observatory.h in Headers */,
+				D03FB88C1E077FE6007E9968 /* Observatory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D03FB8471E04E01B007E9968 /* Observatory */ = {
+		D03FB8471E04E01B007E9968 /* Observative */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03FB85C1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "Observatory" */;
+			buildConfigurationList = D03FB85C1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "Observative" */;
 			buildPhases = (
 				D03FB8431E04E01B007E9968 /* Sources */,
 				D03FB8441E04E01B007E9968 /* Frameworks */,
@@ -171,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = Observatory;
+			name = Observative;
 			productName = Observatory;
-			productReference = D03FB8481E04E01B007E9968 /* Observatory.framework */;
+			productReference = D03FB8481E04E01B007E9968 /* Observative.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D03FB8501E04E01B007E9968 /* ObservatoryTests */ = {
+		D03FB8501E04E01B007E9968 /* ObservativeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03FB85F1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryTests" */;
+			buildConfigurationList = D03FB85F1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "ObservativeTests" */;
 			buildPhases = (
 				D03FB84D1E04E01B007E9968 /* Sources */,
 				D03FB84E1E04E01B007E9968 /* Frameworks */,
@@ -189,14 +180,14 @@
 			dependencies = (
 				D03FB8541E04E01B007E9968 /* PBXTargetDependency */,
 			);
-			name = ObservatoryTests;
+			name = ObservativeTests;
 			productName = ObservatoryTests;
-			productReference = D03FB8511E04E01B007E9968 /* ObservatoryTests.xctest */;
+			productReference = D03FB8511E04E01B007E9968 /* ObservativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D03FB8681E07564C007E9968 /* ObservatoryMac */ = {
+		D03FB8681E07564C007E9968 /* Observative-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03FB87E1E07564D007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryMac" */;
+			buildConfigurationList = D03FB87E1E07564D007E9968 /* Build configuration list for PBXNativeTarget "Observative-Mac" */;
 			buildPhases = (
 				D03FB8641E07564C007E9968 /* Sources */,
 				D03FB8651E07564C007E9968 /* Frameworks */,
@@ -207,14 +198,14 @@
 			);
 			dependencies = (
 			);
-			name = ObservatoryMac;
+			name = "Observative-Mac";
 			productName = ObservatoryMac;
-			productReference = D03FB8691E07564C007E9968 /* Observatory.framework */;
+			productReference = D03FB8691E07564C007E9968 /* Observative.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D03FB8701E07564D007E9968 /* ObservatoryMacTests */ = {
+		D03FB8701E07564D007E9968 /* Observative-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03FB87F1E07564D007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryMacTests" */;
+			buildConfigurationList = D03FB87F1E07564D007E9968 /* Build configuration list for PBXNativeTarget "Observative-MacTests" */;
 			buildPhases = (
 				D03FB86D1E07564D007E9968 /* Sources */,
 				D03FB86E1E07564D007E9968 /* Frameworks */,
@@ -225,9 +216,9 @@
 			dependencies = (
 				D03FB8741E07564D007E9968 /* PBXTargetDependency */,
 			);
-			name = ObservatoryMacTests;
+			name = "Observative-MacTests";
 			productName = ObservatoryMacTests;
-			productReference = D03FB8711E07564D007E9968 /* ObservatoryMacTests.xctest */;
+			productReference = D03FB8711E07564D007E9968 /* Observative-MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -259,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D03FB8421E04E01B007E9968 /* Build configuration list for PBXProject "Observatory" */;
+			buildConfigurationList = D03FB8421E04E01B007E9968 /* Build configuration list for PBXProject "Observative" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -271,10 +262,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D03FB8471E04E01B007E9968 /* Observatory */,
-				D03FB8501E04E01B007E9968 /* ObservatoryTests */,
-				D03FB8681E07564C007E9968 /* ObservatoryMac */,
-				D03FB8701E07564D007E9968 /* ObservatoryMacTests */,
+				D03FB8471E04E01B007E9968 /* Observative */,
+				D03FB8501E04E01B007E9968 /* ObservativeTests */,
+				D03FB8681E07564C007E9968 /* Observative-Mac */,
+				D03FB8701E07564D007E9968 /* Observative-MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8841E077700007E9968 /* Observatory.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8631E04E197007E9968 /* Observatory.swift in Sources */,
+				D03FB88D1E077FE6007E9968 /* Observatory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8571E04E01B007E9968 /* ObservatoryTests.swift in Sources */,
+				D03FB8941E07820B007E9968 /* ObservatoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8801E07567E007E9968 /* Observatory.swift in Sources */,
+				D03FB88E1E077FE6007E9968 /* Observatory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8821E07569A007E9968 /* ObservatoryTests.swift in Sources */,
+				D03FB8951E07820B007E9968 /* ObservatoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +339,12 @@
 /* Begin PBXTargetDependency section */
 		D03FB8541E04E01B007E9968 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D03FB8471E04E01B007E9968 /* Observatory */;
+			target = D03FB8471E04E01B007E9968 /* Observative */;
 			targetProxy = D03FB8531E04E01B007E9968 /* PBXContainerItemProxy */;
 		};
 		D03FB8741E07564D007E9968 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D03FB8681E07564C007E9968 /* ObservatoryMac */;
+			target = D03FB8681E07564C007E9968 /* Observative-Mac */;
 			targetProxy = D03FB8731E07564D007E9968 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,7 +458,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Observatory/Info.plist;
+				INFOPLIST_FILE = "lib/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
@@ -488,7 +478,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Observatory/Info.plist;
+				INFOPLIST_FILE = "lib/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
@@ -502,7 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ObservatoryTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,7 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ObservatoryTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,11 +520,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ObservatoryMac/Info.plist;
+				INFOPLIST_FILE = "lib/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
-				PRODUCT_NAME = Observatory;
+				PRODUCT_BUNDLE_IDENTIFIER = Observative;
+				PRODUCT_NAME = Observative;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -549,11 +539,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ObservatoryMac/Info.plist;
+				INFOPLIST_FILE = "lib/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
-				PRODUCT_NAME = Observatory;
+				PRODUCT_BUNDLE_IDENTIFIER = Observative;
+				PRODUCT_NAME = Observative;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -564,7 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ObservatoryTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -577,7 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ObservatoryTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.ObservatoryMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,7 +579,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D03FB8421E04E01B007E9968 /* Build configuration list for PBXProject "Observatory" */ = {
+		D03FB8421E04E01B007E9968 /* Build configuration list for PBXProject "Observative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03FB85A1E04E01B007E9968 /* Debug */,
@@ -598,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D03FB85C1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "Observatory" */ = {
+		D03FB85C1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "Observative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03FB85D1E04E01B007E9968 /* Debug */,
@@ -607,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D03FB85F1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryTests" */ = {
+		D03FB85F1E04E01B007E9968 /* Build configuration list for PBXNativeTarget "ObservativeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03FB8601E04E01B007E9968 /* Debug */,
@@ -616,21 +606,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D03FB87E1E07564D007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryMac" */ = {
+		D03FB87E1E07564D007E9968 /* Build configuration list for PBXNativeTarget "Observative-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03FB87A1E07564D007E9968 /* Debug */,
 				D03FB87B1E07564D007E9968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D03FB87F1E07564D007E9968 /* Build configuration list for PBXNativeTarget "ObservatoryMacTests" */ = {
+		D03FB87F1E07564D007E9968 /* Build configuration list for PBXNativeTarget "Observative-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03FB87C1E07564D007E9968 /* Debug */,
 				D03FB87D1E07564D007E9968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

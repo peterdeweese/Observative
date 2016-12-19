@@ -1,5 +1,5 @@
 import XCTest
-@testable import Observatory
+@testable import Observative
 
 class ObservatoryTests: XCTestCase
 {
