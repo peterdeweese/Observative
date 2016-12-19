@@ -1,7 +1,7 @@
 import Foundation
 
 //TODO: add conventional method extensions?
-class Observatory:NSObject
+class Observative:NSObject
 {
     public typealias UpdateBlock = (_ oldValue:Any?, _ newValue:Any?) -> Void
 

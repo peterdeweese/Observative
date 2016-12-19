@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D03FB8521E04E01B007E9968 /* Observative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8481E04E01B007E9968 /* Observative.framework */; };
-		D03FB88B1E077FE6007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observatory.h */; };
-		D03FB88C1E077FE6007E9968 /* Observatory.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observatory.h */; };
-		D03FB88D1E077FE6007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observatory.swift */; };
-		D03FB88E1E077FE6007E9968 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observatory.swift */; };
-		D03FB8941E07820B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservatoryTests.swift */; };
-		D03FB8951E07820B007E9968 /* ObservatoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservatoryTests.swift */; };
+		D03FB88C1E077FE6007E9968 /* Observative.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observative.h */; };
+		D03FB88D1E077FE6007E9968 /* Observative.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observative.swift */; };
+		D03FB88E1E077FE6007E9968 /* Observative.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8881E077FE6007E9968 /* Observative.swift */; };
+		D03FB8941E07820B007E9968 /* ObservativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservativeTests.swift */; };
+		D03FB8951E07820B007E9968 /* ObservativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FB8911E07820B007E9968 /* ObservativeTests.swift */; };
 		D03FB89E1E0783E7007E9968 /* Observative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03FB8691E07564C007E9968 /* Observative.framework */; };
+		D03FB8A01E087267007E9968 /* Observative.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D03FB89F1E087267007E9968 /* Observative.podspec */; };
+		D03FB8A11E087B2B007E9968 /* Observative.h in Headers */ = {isa = PBXBuildFile; fileRef = D03FB8871E077FE6007E9968 /* Observative.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,15 +40,15 @@
 		D03FB8511E04E01B007E9968 /* ObservativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FB8691E07564C007E9968 /* Observative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Observative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FB8711E07564D007E9968 /* Observative-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Observative-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FB8831E077700007E9968 /* Observatory.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observatory.podspec; sourceTree = "<group>"; };
-		D03FB8871E077FE6007E9968 /* Observatory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observatory.h; sourceTree = "<group>"; };
-		D03FB8881E077FE6007E9968 /* Observatory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
+		D03FB8871E077FE6007E9968 /* Observative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observative.h; sourceTree = "<group>"; };
+		D03FB8881E077FE6007E9968 /* Observative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observative.swift; sourceTree = "<group>"; };
 		D03FB8901E07820B007E9968 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03FB8911E07820B007E9968 /* ObservatoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservatoryTests.swift; sourceTree = "<group>"; };
+		D03FB8911E07820B007E9968 /* ObservativeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservativeTests.swift; sourceTree = "<group>"; };
 		D03FB8961E078220007E9968 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D03FB8971E078220007E9968 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D03FB89C1E0783C1007E9968 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D03FB89D1E0783C1007E9968 /* Info-Mac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
+		D03FB89F1E087267007E9968 /* Observative.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observative.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,7 @@
 			children = (
 				D03FB8851E077FE6007E9968 /* lib */,
 				D03FB88F1E07820B007E9968 /* test */,
-				D03FB8831E077700007E9968 /* Observatory.podspec */,
+				D03FB89F1E087267007E9968 /* Observative.podspec */,
 				D03FB8961E078220007E9968 /* LICENSE */,
 				D03FB8971E078220007E9968 /* README.md */,
 				D03FB8491E04E01B007E9968 /* Products */,
@@ -110,8 +111,8 @@
 		D03FB8851E077FE6007E9968 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				D03FB8871E077FE6007E9968 /* Observatory.h */,
-				D03FB8881E077FE6007E9968 /* Observatory.swift */,
+				D03FB8871E077FE6007E9968 /* Observative.h */,
+				D03FB8881E077FE6007E9968 /* Observative.swift */,
 				D03FB89C1E0783C1007E9968 /* Info-iOS.plist */,
 				D03FB89D1E0783C1007E9968 /* Info-Mac.plist */,
 			);
@@ -122,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D03FB8901E07820B007E9968 /* Info.plist */,
-				D03FB8911E07820B007E9968 /* ObservatoryTests.swift */,
+				D03FB8911E07820B007E9968 /* ObservativeTests.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -134,7 +135,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB88B1E077FE6007E9968 /* Observatory.h in Headers */,
+				D03FB8A11E087B2B007E9968 /* Observative.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +143,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB88C1E077FE6007E9968 /* Observatory.h in Headers */,
+				D03FB88C1E077FE6007E9968 /* Observative.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03FB8A01E087267007E9968 /* Observative.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB88D1E077FE6007E9968 /* Observatory.swift in Sources */,
+				D03FB88D1E077FE6007E9968 /* Observative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8941E07820B007E9968 /* ObservatoryTests.swift in Sources */,
+				D03FB8941E07820B007E9968 /* ObservativeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB88E1E077FE6007E9968 /* Observatory.swift in Sources */,
+				D03FB88E1E077FE6007E9968 /* Observative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03FB8951E07820B007E9968 /* ObservatoryTests.swift in Sources */,
+				D03FB8951E07820B007E9968 /* ObservativeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +463,7 @@
 				INFOPLIST_FILE = "lib/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
+				PRODUCT_BUNDLE_IDENTIFIER = Observative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -481,7 +483,7 @@
 				INFOPLIST_FILE = "lib/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deweese.Observatory;
+				PRODUCT_BUNDLE_IDENTIFIER = Observative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D03FB8681E07564C007E9968"
-               BuildableName = "Observatory.framework"
+               BuildableName = "Observative.framework"
                BlueprintName = "Observative-Mac"
                ReferencedContainer = "container:Observative.xcodeproj">
             </BuildableReference>
@@ -75,6 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D03FB8681E07564C007E9968"
+            BuildableName = "Observative.framework"
+            BlueprintName = "Observative-Mac"
+            ReferencedContainer = "container:Observative.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -1,20 +1,20 @@
 import XCTest
 @testable import Observative
 
-class ObservatoryTests: XCTestCase
+class ObservativeTests: XCTestCase
 {
     func testObservation()
     {
         var updateCalled = false
         let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1", "key2":"value2"])
         
-        let observatory = Observatory()
-        observatory.startObservation(of:objectToWatch, keyPath:"key1")
+        let observative = Observative()
+        observative.startObservation(of:objectToWatch, keyPath:"key1")
         { (oldValue, newValue) in
             updateCalled = true
         }
         
-        XCTAssertNotNil(observatory.observations[objectToWatch, "key1"])
+        XCTAssertNotNil(observative.observations[objectToWatch, "key1"])
         XCTAssertFalse(updateCalled)
         objectToWatch["key1"] = "updatedValue1"
         XCTAssert(updateCalled)
@@ -25,16 +25,16 @@ class ObservatoryTests: XCTestCase
         var updateCalled = false
         let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1", "key2":"value2"])
         
-        let observatory = Observatory()
-        observatory.startObservation(of:objectToWatch, keyPath:"key1")
+        let observative = Observative()
+        observative.startObservation(of:objectToWatch, keyPath:"key1")
         { (oldValue, newValue) in
             updateCalled = true
         }
         
-        XCTAssertNotNil(observatory.observations[objectToWatch, "key1"])
+        XCTAssertNotNil(observative.observations[objectToWatch, "key1"])
         XCTAssertFalse(updateCalled)
         
-        observatory.stopObservation()
+        observative.stopObservation()
 
         objectToWatch["key1"] = "updatedValue1"
         XCTAssertFalse(updateCalled)
