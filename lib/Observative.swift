@@ -23,7 +23,7 @@ public class Observative:NSObject
         observation.object?.addObserver(self, forKeyPath:observation.keyPath, options:[.old, .new], context: nil)
     }
     
-    func startObservation(of object:NSObject, keyPath:String, update:UpdateBlock?)
+    public func startObservation(of object:NSObject, keyPath:String, update:UpdateBlock?)
     {
         startObservation(Observation(object:object, keyPath:keyPath, update:update))
     }
@@ -37,7 +37,7 @@ public class Observative:NSObject
         }
     }
     
-    func stopObservation(of object:NSObject, keyPath:String)
+    public func stopObservation(of object:NSObject, keyPath:String)
     {
         if let observation = observations[object, keyPath]
         {
@@ -45,12 +45,12 @@ public class Observative:NSObject
         }
     }
 
-    func stopObservation(of object:NSObject)
+    public func stopObservation(of object:NSObject)
     {
         observations[object]?.values.forEach{ stopObservation($0) }
     }
     
-    func stopObservation()
+    public func stopObservation()
     {
         observations.set.forEach{ stopObservation($0) }
     }
