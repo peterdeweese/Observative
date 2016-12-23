@@ -35,8 +35,52 @@ class ObservativeTests: XCTestCase
         XCTAssertFalse(updateCalled)
         
         observative.stopObservation()
-
+        
         objectToWatch["key1"] = "updatedValue1"
         XCTAssertFalse(updateCalled)
+    }
+    
+    class TestClass:NSObject
+    {
+        var property = "test"
+    }
+
+    func testFailureWithoutDynamicProperties()
+    {
+        var updateCalled = false
+        let objectToWatch = TestClass()
+        
+        let observative = Observative()
+        observative.startObservation(of:objectToWatch, keyPath:"property")
+        { (oldValue, newValue) in
+            updateCalled = true
+        }
+        
+        objectToWatch.property = "new"
+
+        XCTAssertFalse(updateCalled)
+        observative.stopObservation()
+    }
+    
+    class TestClass2:NSObject
+    {
+        dynamic var property = "test"
+    }
+    
+    func testSuccessWithDynamicProperties()
+    {
+        var updateCalled = false
+        let objectToWatch = TestClass2()
+        
+        let observative = Observative()
+        observative.startObservation(of:objectToWatch, keyPath:"property")
+        { (oldValue, newValue) in
+            updateCalled = true
+        }
+        
+        objectToWatch.property = "new"
+
+        XCTAssertTrue(updateCalled)
+        observative.stopObservation()
     }
 }

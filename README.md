@@ -1,5 +1,7 @@
 # Observative
 Swift library to simplify key value observation. KVO only works with NSObjects, so Observative can only observe ancestors of NSObject.
+ * Observe properties only on NSObjects
+ * Declare observed properties dynamic, `dynamic var myVar`
 
 ### Types
  * public typealias UpdateBlock = (_ oldValue:Any?, _ newValue:Any?) -> Void

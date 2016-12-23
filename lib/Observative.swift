@@ -55,6 +55,7 @@ public class Observative:NSObject
         observations.set.forEach{ stopObservation($0) }
     }
     
+    //If this isn't called, the observed property might need to be declared as `dynamic`
     override public func observeValue(forKeyPath keyPath:String?, of object:Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
         if let object = object as? NSObject,
