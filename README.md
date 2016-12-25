@@ -3,14 +3,13 @@ Swift library to simplify key value observation. KVO only works with NSObjects, 
  * Observe properties only on NSObjects
  * Declare observed properties dynamic, `dynamic var myVar`
 
-### Types
- * public typealias UpdateBlock = (_ oldValue:Any?, _ newValue:Any?) -> Void
-
 ### Methods
- * func startObservation(of object:NSObject, keyPath:String, update:UpdateBlock?)
- * func stopObservation(of object:NSObject, keyPath:String)
- * func stopObservation(of object:NSObject)
- * func stopObservation()
+* observe(_ object:NSObject, keyPath:String, onChange:*see below*)
+	+ (_ oldValue:Any?, _ newValue:Any?) -> Void
+	+ (_ newValue:Any?) -> Void
+	+ () -> Void
+* stopObserving(_ object:NSObject)
+* stopObserving()
 
 ### Playground Example
 ```swift
@@ -18,8 +17,8 @@ var updateCalled = false
 let objectToWatch = NSMutableDictionary(dictionary:["key1":"value1"])
         
 let observative = Observative()
-observative.startObservation(objectToWatch, keyPath:"key1")
-{ (oldValue, newValue) in
+observative.observe(objectToWatch, keyPath:"key1")
+{
     updateCalled = true
 }
         
@@ -29,18 +28,16 @@ if updateCalled{ print("it worked!") }
 
 ### Class Example
 ```swift
-class MyController
+class MyController, Observes
 {
-    let observative = Observative()
-
     var objectToWatch:CustomObject {
         didSet {
             if oldValue != nil
             {
-                observative.stopObservation(oldValue, keyPath: "myProperty")
+                stopObserving(oldValue)
             }
-            observative.startObservation(objectToWatch, keyPath:"myProperty")
-            { oldValue, newValue in
+            observe(objectToWatch, keyPath:"myProperty")
+            {
                 self.doOnChange()
             }
         }
@@ -48,6 +45,7 @@ class MyController
     
     func doOnChange()
     {
+    	print("myProperty changed!")
         // object changed
     }
 }

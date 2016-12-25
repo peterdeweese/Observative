@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Observative"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "Observative tracks NSObject changes using custom blocks and remembers what it is observing."
   s.homepage     = "https://github.com/peterdeweese/Observative"
   s.license      = "MIT"
